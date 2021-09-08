@@ -4,6 +4,7 @@ def hanoi(disks, source, auxiliary, target):
         return
  
     hanoi(disks - 1, source, target, auxiliary)
+    
     print('Move disk {} from peg {} to peg {}.'.format(disks, source, target))
     hanoi(disks - 1, auxiliary, source, target)
  
